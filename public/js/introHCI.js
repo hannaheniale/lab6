@@ -28,3 +28,13 @@ function addProjectDetails(e) {
 
 	console.log("User clicked on project " + idNumber);
 }
+
+function addProjectDetails(e){
+	e.preventDefault();
+
+	var projectID = $(this).closest('project').attr('id');
+
+	var idNumber = projectID.substr('project'.length);
+
+	console.log("User clicked on project" " idNumber");
+}
